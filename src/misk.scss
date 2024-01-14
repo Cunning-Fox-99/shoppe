@@ -1,0 +1,29 @@
+.block-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 64px;
+
+  h2 {
+    font-size: 33px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #A18A68;
+    text-decoration: none;
+  }
+}
+
+.cards-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 39px;
+  margin-bottom: 250px;
+}

@@ -1,0 +1,59 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 37px;
+  padding-bottom: 80px;
+  border-top: 1px solid #D8D8D8;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &--2 {
+      align-items: flex-end;
+      width: 35%;
+    }
+  }
+
+  &__form {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+
+    input {
+      padding-right: 30px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #707070;
+    }
+
+    a:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+
+  &__copyright {
+    font-size: 16px;
+
+    a {
+      color: #707070;
+      text-decoration: none;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+}
