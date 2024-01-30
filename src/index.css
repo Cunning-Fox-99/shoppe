@@ -55,3 +55,15 @@ button {
   border: unset;
   cursor: pointer;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}

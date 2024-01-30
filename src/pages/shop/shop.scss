@@ -1,0 +1,26 @@
+.shop {
+  margin-top: 96px;
+  margin-bottom: 250px;
+
+  &__title {
+    margin-bottom: 39px;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-left: 36px;
+  }
+}
