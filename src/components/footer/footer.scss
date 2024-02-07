@@ -61,3 +61,34 @@
     top: 5px;
   }
 }
+
+@media (max-width: 860px) {
+  .footer {
+    flex-direction: column-reverse;
+
+    &__column {
+      width: 100%;
+
+      &--2 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  .footer {
+
+    padding-bottom: 30px;
+
+
+    &__links {
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+
+      a {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

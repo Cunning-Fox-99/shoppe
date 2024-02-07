@@ -95,3 +95,41 @@
 
   }
 }
+
+@media (max-width: 1190px) {
+  .card {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 48%;
+    margin-right: 0;
+
+    &:nth-child(3n) {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .card {
+
+    margin-bottom: 32px;
+
+    h5 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+
+    a {
+      margin-bottom: 8px;
+    }
+  }
+}
