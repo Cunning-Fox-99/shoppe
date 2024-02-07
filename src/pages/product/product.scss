@@ -79,29 +79,10 @@
     align-items: center;
     width: 100%;
     margin-bottom: 80px;
-  }
 
-  &__quantity {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 102px;
-    height: 53px;
-
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 23px;
-
-    border-radius: 4px;
-    background: #EFEFEF;
-
-    font-size: 16px;
-    color: #707070
-  }
-  
-  &__quantity-button {
-    cursor: pointer;
+    .quantity {
+      margin-right: 24px;
+    }
   }
 
   &__button {

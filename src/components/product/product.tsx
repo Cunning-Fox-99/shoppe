@@ -1,18 +1,9 @@
 import React, {useState} from 'react';
 import SocialList from "../social-list";
 import star from './star.svg'
+import Quantity from "../quantity/quantity";
 
 export default function Product() {
-
-    const [quantity, setQuantity] = useState<any>(1)
-
-    const changeQuantity = (number:any) => {
-        if (quantity === 1 && number < 0) {
-           setQuantity(1)
-        } else {
-            setQuantity(number + quantity)
-        }
-    }
 
     return <div className="product__item">
 
@@ -42,11 +33,7 @@ export default function Product() {
 
         <div className="product__buttons">
 
-            <div className="product__quantity">
-                <span className="product__quantity-button" onClick={() => changeQuantity(-1)}>-</span>
-                <span>{quantity}</span>
-                <span className="product__quantity-button" onClick={() => changeQuantity(1)}>+</span>
-            </div>
+            <Quantity/>
 
             <button className="product__button button">ADD TO CART</button>
 

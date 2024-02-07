@@ -13,6 +13,9 @@ import Contact from "./pages/contact";
 import Account from "./pages/account";
 import AccountLogin from "./pages/account/account-login";
 import AboutUs from "./pages/about-us";
+import OrderDetails from "./pages/order-details";
+import Cart from "./pages/cart";
+import Checkout from "./pages/checkout";
 
 function App() {
     return <BrowserRouter>
@@ -31,6 +34,9 @@ function App() {
 
             <Route path="/account" element={<Account />} />
             <Route path="/account/*" element={<AccountLogin />} />
+            <Route path="/order/:id" element={<OrderDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart/checkout" element={<Checkout />} />
 
         </Routes>
         <Footer />
