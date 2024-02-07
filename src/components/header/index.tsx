@@ -21,10 +21,10 @@ export default function Header() {
             </div>
             <div className={active ? "header__column header__column--2 open" :"header__column header__column--2"}>
                 <nav className="header__nav">
-                    <Link className={location.pathname.includes('shop') ? 'active' : ''} to={'/shop'}>Shop</Link>
-                    <Link className={location.pathname.includes('blog') ? 'active' : ''} to={'/blog'}>Blog</Link>
-                    <Link className={location.pathname.includes('about-us') ? 'active' : ''} to={'/about-us'}>Our story</Link>
-                    <Link className={location.pathname.includes('contact') ? 'active mobile' : 'mobile'} to={'/contact'}>Contact</Link>
+                    <Link onClick={() => setActive(false)} className={location.pathname.includes('shop') ? 'active' : ''} to={'/shop'}>Shop</Link>
+                    <Link onClick={() => setActive(false)} className={location.pathname.includes('blog') ? 'active' : ''} to={'/blog'}>Blog</Link>
+                    <Link onClick={() => setActive(false)} className={location.pathname.includes('about-us') ? 'active' : ''} to={'/about-us'}>Our story</Link>
+                    <Link onClick={() => setActive(false)} className={location.pathname.includes('contact') ? 'active mobile' : 'mobile'} to={'/contact'}>Contact</Link>
                 </nav>
                 <div className="header__icons">
                     <div className="header__icon">

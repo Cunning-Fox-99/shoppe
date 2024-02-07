@@ -133,7 +133,7 @@
       position: absolute;
       right: 0;
       top: 100%;
-      z-index: 1;
+      z-index: 10;
 
       background: #ffff;
     }
@@ -152,6 +152,10 @@
 
       a {
         font-size: 20px;
+      }
+
+      a.active:after, a:hover:after {
+        bottom: -6px;
       }
 
       a:not(:last-child) {
